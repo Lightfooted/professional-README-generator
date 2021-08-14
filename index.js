@@ -52,7 +52,7 @@ const questions = [
         name: 'installation',
         message: 'How do you install your project? (Required)',
         validate: installationInput => {
-          if (intallationInput) {
+          if (installationInput) {
             return true;
           } else {
             console.log('You need to enter installation information to your project!');
@@ -65,8 +65,14 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+//Function to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then(function (userInput) {
+        console.log(userInput)
+        writeToFile("README.md", generateMarkdown(userInput));
+    });
+}
 
 // Function call to initialize app
 init();
