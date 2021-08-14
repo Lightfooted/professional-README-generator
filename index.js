@@ -89,7 +89,7 @@ const questions = [
           }
         }
       },
-      //Contribution
+      //Contribution - not working - undefined
       {
         type: 'input',
         name: 'contribute',
