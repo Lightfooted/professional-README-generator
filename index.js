@@ -60,6 +60,91 @@ const questions = [
           }
         }
       },
+      //Usage
+      {
+        type: 'input',
+        name: 'usage',
+        message: 'How do you use this project? (Required)',
+        validate: usageInput => {
+          if (usageInput) {
+            return true;
+          } else {
+            console.log('You need to provide information on how to use this project!');
+            return false;
+          }
+        }
+      },
+      //License
+      {
+        type: 'checkbox',
+        name: 'licenses',
+        message: 'What license would you like to use for this project? (Required)',
+        choices: [],
+        validate: licensesInput => {
+          if (licensesInput) {
+            return true;
+          } else {
+            console.log('You must choose a license for this project!');
+            return false;
+          }
+        }
+      },
+      //Contribution
+      {
+        type: 'input',
+        name: 'contribute',
+        message: 'How can others contribute to this project? (Required)',
+        validate: contributeInput => {
+          if (contributeInput) {
+            return true;
+          } else {
+            console.log('You must inform on how to contribute to this project!');
+            return false;
+          }
+        }
+      },
+      //Testing
+      {
+        type: 'input',
+        name: 'test',
+        message: 'How do you test this project? (Required)',
+        validate: testInput => {
+          if (testInput) {
+            return true;
+          } else {
+            console.log('You must describe how to test this project!');
+            return false;
+          }
+        }
+      },
+      //Username
+      {
+        type: 'input',
+        name: 'github',
+        message: 'Enter your GitHub Username (Required)',
+        validate: githubInput => {
+          if (githubInput) {
+            return true;
+          } else {
+            console.log('Please enter your GitHub username!');
+            return false;
+          }
+        }
+      },
+      //Email
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your email address (Required)',
+        validate: emailInput => {
+          if (emailInput) {
+            return true;
+          } else {
+            console.log('You must enter your email address!');
+            return false;
+          }
+        }
+      }
 ];
 
 // TODO: Create a function to write README file
