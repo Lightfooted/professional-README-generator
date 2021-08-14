@@ -78,14 +78,11 @@ const questions = [
       {
         type: 'checkbox',
         name: 'licenses',
-        message: 'What license would you like to use for this project? (Required)',
+        message: 'What license would you like to use for this project?',
         choices: ['Apache', 'GNU', 'MIT', 'ISC'],
         validate: licensesInput => {
           if (licensesInput) {
             return true;
-          } else {
-            console.log('You must choose a license for this project!');
-            return false;
           }
         }
       },
