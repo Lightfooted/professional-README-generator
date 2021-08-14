@@ -1,26 +1,25 @@
 # Professional-README-Generator
 
+  MIT
+
   ## Description:
-  A generator used to quickly add information into a README file for future projects
+  Test
 
   ## Project Link:
-  https://github.com/Lightfooted/professional-README-generator
+  Test
 
   ## Installation
-  Requires installation of Node npm inquirer
+  Test
 
   ## Usage
-  Through the command line
-
-  ## License
-  
+  Test
 
   ## Contribution
   undefined
 
   ## Test
-  Terminal
+  Test
 
-  ##Username and Contact
+  ## Username and Contact
   Lightfooted
   vesselofbalance@hotmail.com

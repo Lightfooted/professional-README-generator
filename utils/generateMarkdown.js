@@ -2,6 +2,8 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${data.licenses}
+
   ## Description:
   ${data.description}
 
@@ -14,16 +16,13 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## License
-  ${data.licenses}
-
   ## Contribution
   ${data.contribue}
 
   ## Test
   ${data.test}
 
-  ##Username and Contact
+  ## Username and Contact
   ${data.github}
   ${data.email}
 `;
