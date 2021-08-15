@@ -10,9 +10,9 @@ function generateMarkdown(data) {
   * [Project Link](#project-link)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Test](#test)
   * [Contribution](#contribution)
-  * [Github Info](#github-info)
+  * [Test](#test)
+  * [Questions](#questions)
 
   ## Description:
   ${data.description}
@@ -32,9 +32,10 @@ function generateMarkdown(data) {
   ## Test
   ${data.test}
 
-  ## Github Info
-  - Username: ${data.github}
-  - Email: ${data.email}
+  ## Questions
+  Have any questions or need further assistance with the project? 
+  * Profile: [${data.github}](http://github.com/${data.github})
+  * Email: ${data.email}
 `;
 }
 
