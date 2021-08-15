@@ -2,10 +2,9 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// Array of questions for user input
 const questions = [
-    //Title
-    {
+      //Title
+      {
         type: 'input',
         name: 'title',
         message: 'What is the title of your README? (Required)',
@@ -79,14 +78,9 @@ const questions = [
         type: 'checkbox',
         name: 'licenses',
         message: 'What license would you like to use for this project?',
-        choices: ['Apache', 'GNU', 'MIT', 'ISC'],
-        validate: licensesInput => {
-          if (licensesInput) {
-            return true;
-          }
-        }
+        choices: ['Apache', 'GNU', 'MIT', 'ISC']
       },
-      //Contribution - not working - undefined
+      //Contribution
       {
         type: 'input',
         name: 'contribute',
