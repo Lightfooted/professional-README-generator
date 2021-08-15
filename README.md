@@ -1,6 +1,6 @@
 # test
 
-  
+  ![badge](https://img.shields.io/badge/license-Apache-informational)
 
   ## Description:
   test
@@ -15,11 +15,11 @@
   test
 
   ## Contribution
-  undefined
+  test
 
   ## Test
   test
 
-  ## Username and Contact
-  test
-  test
+  ## Github Info
+  - Username: Lightfooted
+  - Email: vesselofbalance@hotmail.com
