@@ -2,7 +2,17 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ## License:
   ![badge](https://img.shields.io/badge/license-${data.licenses}-informational)
+
+  # Table of Contents
+  * [Description](#description)
+  * [Project Link](#project-link)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Test](#test)
+  * [Contribution](#contribution)
+  * [Github Info](#github-info)
 
   ## Description:
   ${data.description}
