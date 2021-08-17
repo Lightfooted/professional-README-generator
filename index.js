@@ -78,7 +78,7 @@ const questions = [
         type: 'checkbox',
         name: 'licenses',
         message: 'What license would you like to use for this project?',
-        choices: ['Apache', 'GNU', 'MIT', 'ISC']
+        choices: ["Apache", "GNU", "MIT", "ISC", "None"]
       },
       //Contribution
       {
