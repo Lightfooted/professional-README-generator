@@ -18,7 +18,7 @@ function renderLicenseLink(licenses) {
 function renderLicenseSection(licenses) {
   if (licenses != "None") {
     return `## License
-    This project uses the ${licenses} license.`
+  This project uses the ${licenses} license.` //Indentation fix. Thanks, Mila!
   }
   return ``
 }
