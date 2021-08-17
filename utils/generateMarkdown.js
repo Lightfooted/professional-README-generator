@@ -1,6 +1,6 @@
 // Function that returns a license badge based on which license is passed in
 function renderLicenseBadge(licenses) {
-  if (licenses !== "None") {
+  if (licenses != "None") {
     return `![badge](https://img.shields.io/badge/License-${licenses}-informational)`
   }
   return ``
@@ -8,7 +8,7 @@ function renderLicenseBadge(licenses) {
 
 // Function that returns the license link
 function renderLicenseLink(licenses) {
-  if (licenses !== "None") {
+  if (licenses != "None") {
     return `
     * [License](#license)`
   }
@@ -17,7 +17,7 @@ function renderLicenseLink(licenses) {
 
 //Function that returns the license section of README
 function renderLicenseSection(licenses) {
-  if (licenses !== "None") {
+  if (licenses != "None") {
     return `
     ## License
     This project uses the ${licenses} license. `
