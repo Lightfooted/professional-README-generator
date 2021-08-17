@@ -1,15 +1,42 @@
+// Function that returns a license badge based on which license is passed in
+function renderLicenseBadge(licenses) {
+  if (licenses !== "None") {
+    return `![badge](https://img.shields.io/badge/License-${licenses}-informational)`
+  }
+  return ``
+}
+
+// Function that returns the license link
+function renderLicenseLink(licenses) {
+  if (licenses !== "None") {
+    return `
+    * [License](#license)`
+  }
+  return ``
+}
+
+//Function that returns the license section of README
+function renderLicenseSection(licenses) {
+  if (licenses !== "None") {
+    return `
+    ## License
+    This project uses the ${licenses} license. `
+  }
+  return ``
+}
+
 //Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ## License:
-  ![badge](https://img.shields.io/badge/license-${data.licenses}-informational)
+  ${renderLicenseBadge(data.licenses)}
 
   # Table of Contents
   * [Description](#description)
   * [Project Link](#project-link)
   * [Installation](#installation)
   * [Usage](#usage)
+  ${renderLicenseLink(data.licenses)}
   * [Contribution](#contribution)
   * [Test](#test)
   * [Questions](#questions)
@@ -25,6 +52,8 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
+
+  ${renderLicenseSection(data.licenses)}
 
   ## Contribution
   ${data.contribute}
