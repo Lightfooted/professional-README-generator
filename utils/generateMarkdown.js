@@ -9,8 +9,7 @@ function renderLicenseBadge(licenses) {
 // Function that returns the license link
 function renderLicenseLink(licenses) {
   if (licenses != "None") {
-    return `
-    * [License](#license)`
+    return `* [License](#license)`
   }
   return ``
 }
@@ -18,9 +17,8 @@ function renderLicenseLink(licenses) {
 //Function that returns the license section of README
 function renderLicenseSection(licenses) {
   if (licenses != "None") {
-    return `
-    ## License
-    This project uses the ${licenses} license. `
+    return `## License
+    This project uses the ${licenses} license.`
   }
   return ``
 }
