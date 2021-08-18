@@ -23,6 +23,23 @@ function renderLicenseSection(licenses) {
   return ``
 }
 
+// Function that returns the screenshot link
+function renderScreenshotLink(url) {
+  if (url != false) {
+    return `* [Screenshot](#screenshot)`
+  }
+  return ``
+}
+
+//Function that returns the screenshot section with display image of README
+function renderScreenshotSection(url) {
+  if (url != false) {
+    return `## Screenshot
+  ![screenshot](${url})`
+  }
+  return ``
+}
+
 //Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -32,6 +49,7 @@ function generateMarkdown(data) {
   # Table of Contents
   * [Description](#description)
   * [Project Link](#project-link)
+  ${renderScreenshotLink(data.url)}
   * [Installation](#installation)
   * [Usage](#usage)
   ${renderLicenseLink(data.licenses)}
@@ -44,6 +62,8 @@ function generateMarkdown(data) {
 
   ## Project Link:
   ${data.link}
+
+  ${renderScreenshotSection(data.url)}
 
   ## Installation
   ${data.installation}

@@ -45,6 +45,18 @@ const questions = [
           }
         }
       },
+      //Screenshot
+      {
+        type: 'confirm',
+        name: 'addScreenshots',
+        message: 'Would you like to add a screenshot?',
+      },
+      {
+        type: 'input',
+        name: 'url',
+        message: 'Enter the URL',
+        when: (urlInput) => urlInput.addScreenshots === true
+      },
       //Installation
       {
         type: 'input',
