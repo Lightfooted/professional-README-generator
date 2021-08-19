@@ -20,7 +20,7 @@
   https://github.com/Lightfooted/professional-README-generator
 
   ## Screenshot
-  ![screenshot](https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg)
+  ![screenshot](/images/generator-screen.png)
 
   ## Installation
   Run npm i
