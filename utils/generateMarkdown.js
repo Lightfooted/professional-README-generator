@@ -24,16 +24,16 @@ function renderLicenseSection(licenses) {
 }
 
 // Function that returns the screenshot link
-function renderScreenshotLink(url) {
-  if (url != false) {
+function renderScreenshotLink(addScreenshots) {
+  if (addScreenshots) {
     return `* [Screenshot](#screenshot)`
   }
   return ``
 }
 
 //Function that returns the screenshot section with display image of README
-function renderScreenshotSection(url) {
-  if (url != false) {
+function renderScreenshotSection(addScreenshots, url) {
+  if (addScreenshots) {
     return `## Screenshot
   ![screenshot](${url})`
   }
@@ -42,47 +42,62 @@ function renderScreenshotSection(url) {
 
 //Function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  const {
+    addScreenshots,
+    description,
+    contribute,
+    email,
+    github,
+    installation,
+    licenses,
+    link,
+    title,
+    url,
+    usage,
+    test,
+  } = data;
 
-  ${renderLicenseBadge(data.licenses)}
+  return `# ${title}
+
+  ${renderLicenseBadge(licenses)}
 
   # Table of Contents
   * [Description](#description)
   * [Project Link](#project-link)
-  ${renderScreenshotLink(data.url)}
+  ${renderScreenshotLink(addScreenshots)}
   * [Installation](#installation)
   * [Usage](#usage)
-  ${renderLicenseLink(data.licenses)}
+  ${renderLicenseLink(licenses)}
   * [Contribution](#contribution)
   * [Test](#test)
   * [Questions](#questions)
 
   ## Description:
-  ${data.description}
+  ${description}
 
   ## Project Link:
-  ${data.link}
+  ${link}
 
-  ${renderScreenshotSection(data.url)}
+  ${renderScreenshotSection(addScreenshots, url)}
 
   ## Installation
-  ${data.installation}
+  ${installation}
 
   ## Usage
-  ${data.usage}
+  ${usage}
 
-  ${renderLicenseSection(data.licenses)}
+  ${renderLicenseSection(licenses)}
 
   ## Contribution
-  ${data.contribute}
+  ${contribute}
 
   ## Test
-  ${data.test}
+  ${test}
 
   ## Questions
   Have any questions or need further assistance with the project? 
-  * Profile: [${data.github}](http://github.com/${data.github})
-  * Email: ${data.email}
+  * Profile: [${github}](http://github.com/${github})
+  * Email: ${email}
 `;
 }
 
