@@ -1,25 +1,43 @@
-# test
+# professional-README-generator
 
-  ![badge](https://img.shields.io/badge/license-Apache-informational)
+  ![badge](https://img.shields.io/badge/License-MIT-informational)
+
+  # Table of Contents
+  * [Description](#description)
+  * [Project Link](#project-link)
+  * [Screenshot](#screenshot)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contribution](#contribution)
+  * [Test](#test)
+  * [Questions](#questions)
 
   ## Description:
-  test
+  This is an application that quickly generates a README file through a list of questions and answers provided by the users input.
 
   ## Project Link:
-  test
+  https://github.com/Lightfooted/professional-README-generator
+
+  ## Screenshot
+  ![screenshot](https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg)
 
   ## Installation
-  test
+  Run npm i
 
   ## Usage
-  test
+  Run node index or node index.js and answer all prompted questions.
+
+  ## License
+  This project uses the MIT license.
 
   ## Contribution
-  test
+  Others can contribute by pull requests, opening and answering discussions or by opening an issue.
 
   ## Test
-  test
+  No testing required.
 
-  ## Github Info
-  - Username: Lightfooted
-  - Email: vesselofbalance@hotmail.com
+  ## Questions
+  Have any questions or need further assistance with the project? 
+  * Profile: [Lightfooted](http://github.com/Lightfooted)
+  * Email: vesselofbalance@hotmail.com
