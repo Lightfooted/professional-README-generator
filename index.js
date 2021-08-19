@@ -45,7 +45,7 @@ const questions = [
           }
         }
       },
-      //Screenshot
+      //Screenshot (added as extra)
       {
         type: 'confirm',
         name: 'addScreenshots',
